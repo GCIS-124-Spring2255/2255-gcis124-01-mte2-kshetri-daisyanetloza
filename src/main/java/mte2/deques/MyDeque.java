@@ -16,22 +16,22 @@ public class MyDeque<E> implements Deque<E> {
 
     @Override
     public void enqueueFront(E element) {
-        
+        list.addFirst(element);
     }
 
     @Override
     public void enqueueBack(E element) {
-        
+        list.addLast(element);
     }
 
     @Override
     public E dequeueFront() {
-        return dequeueFront();
+        return list.removeFirst();
     }
 
     @Override
     public E dequeueBack() {
-        return dequeueBack();
+        return list.removeLast();
     }
 
     @Override
