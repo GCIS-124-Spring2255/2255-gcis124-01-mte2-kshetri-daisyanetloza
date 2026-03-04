@@ -16,40 +16,45 @@ public class MyDeque<E> implements Deque<E> {
 
     @Override
     public void enqueueFront(E element) {
-
+        
     }
 
     @Override
     public void enqueueBack(E element) {
-
+        
     }
 
     @Override
     public E dequeueFront() {
-
+        return dequeueFront();
     }
 
     @Override
     public E dequeueBack() {
-
+        return dequeueBack();
     }
 
     @Override
     public int size() {
-        return size();
+        return list.size();
     }
 
     @Override
-    public Iterator<E> iterator() {
+    public Iterator<E> iterator() {   
+        return list.iterator();
+    /* 
         public boolean hasNext() {
-            return 
+            if (getValue() != null) {
+                return false;
+            }
+            return true;
         }
 
         public E next() {
-            E v = list.getValue();
-            list = list.getNext();
-            return v;
-        }
+            E ele = list.getValue();
+            
+            return ele;
+        } */
     }
 
 
